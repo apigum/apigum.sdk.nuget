@@ -1,0 +1,16 @@
+﻿namespace Apigum.NuGet
+{
+    public class Apps
+    {
+        public static class {app-name}
+        {
+            public static class Integrations
+            {
+                public static string {integration-title} = "{integration-key}";
+            }
+
+            public static string AppId = "{app-key}";
+        }
+
+    }
+}

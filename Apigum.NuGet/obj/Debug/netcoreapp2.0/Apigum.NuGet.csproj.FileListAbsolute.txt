@@ -1,0 +1,9 @@
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\bin\Debug\netcoreapp2.0\Apigum.NuGet.deps.json
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\bin\Debug\netcoreapp2.0\Apigum.NuGet.dll
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\bin\Debug\netcoreapp2.0\Apigum.NuGet.pdb
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.csprojResolveAssemblyReference.cache
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.csproj.CoreCompileInputs.cache
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.AssemblyInfoInputs.cache
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.AssemblyInfo.cs
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.dll
+C:\sample\dot.net\Apigum.NuGet\Apigum.NuGet\obj\Debug\netcoreapp2.0\Apigum.NuGet.pdb

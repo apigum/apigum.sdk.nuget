@@ -1,0 +1,9 @@
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.csprojResolveAssemblyReference.cache
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.csproj.CoreCompileInputs.cache
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.AssemblyInfoInputs.cache
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.AssemblyInfo.cs
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\bin\Debug\netcoreapp2.0\Freshdesk.Integrations.deps.json
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\bin\Debug\netcoreapp2.0\Freshdesk.Integrations.dll
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\bin\Debug\netcoreapp2.0\Freshdesk.Integrations.pdb
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.dll
+C:\sample\dot.net\Freshdesk\Freshdesk.Integrations\obj\Debug\netcoreapp2.0\Freshdesk.Integrations.pdb
