@@ -1,0 +1,15 @@
+#*******************************
+#use this to reset gitignore
+#git rm -r --cached .
+#git add .
+#*******************************
+packages
+bin/
+*/bin
+*/bin/*
+**/bin/
+*/obj
+*csproj.user
+.vs
+*.user
+*/TestResults
