@@ -6,11 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Apps.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Apigum.NuGet\Apigum.NuGet.csproj" />
+    <ProjectReference Include="..\Apigum.Sdk\Apigum.Sdk.csproj" />
   </ItemGroup>
 
 </Project>

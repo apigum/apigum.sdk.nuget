@@ -3,7 +3,7 @@ using System.Net;
 using System.Net.Http;
 using System.Text;
 
-namespace Apigum.NuGet
+namespace Apigum.Sdk
 {
     public static class RestHelper
     {

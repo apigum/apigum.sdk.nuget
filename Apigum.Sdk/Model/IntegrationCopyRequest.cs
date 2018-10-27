@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace Apigum.NuGet
+namespace Apigum.Sdk
 {
     public class IntegrationCopyRequest
     {

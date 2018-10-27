@@ -13,3 +13,4 @@ bin/
 .vs
 *.user
 */TestResults
+test-credentials.txt

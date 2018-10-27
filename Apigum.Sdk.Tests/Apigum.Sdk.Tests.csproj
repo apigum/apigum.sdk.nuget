@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Apigum.NuGet\Apigum.NuGet.csproj" />
+    <ProjectReference Include="..\Apigum.Sdk\Apigum.Sdk.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Apigum.NuGet.Model
+namespace Apigum.Sdk.Model
 {
     public class App
     {

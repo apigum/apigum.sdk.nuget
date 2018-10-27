@@ -1,6 +1,6 @@
 ﻿
 
-namespace Apigum.NuGet
+namespace Apigum.Sdk
 {
     public  class KeyValuePair
     {

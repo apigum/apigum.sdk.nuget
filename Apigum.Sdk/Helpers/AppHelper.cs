@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Apigum.NuGet.Model;
+using Apigum.Sdk.Model;
 
-namespace Apigum.NuGet.Helpers
+namespace Apigum.Sdk.Helpers
 {
     public static class AppHelper
     {
