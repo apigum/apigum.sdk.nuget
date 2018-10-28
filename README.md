@@ -15,7 +15,8 @@ ApiGum SDK is a .Net library for managing integrations between popular cloud app
 
  - Log into your [apigum.com](apigum.com) account to obtain your API Key.  
  - You'll also need to obtain the relevant application keys. For example secret key for Stripe or Subdomain and Api Key for Freshdesk.
- - This library makes calls to the [apigum REST API](https://api.apigum.com/help).  
+ - This library makes calls to the [apigum REST API](https://api.apigum.com/help).
+ - This SDK includes a current snapshot of [supported integrations](https://github.com/apigum/apigum.sdk.nuget/blob/master/ApiGum.Sdk.Generator/Apps.cs). This of course can be overriden by picking up new integration ids @ apigum.com.
 
 ## Namespaces
 All examples here are written as if you've added the following using statements to your file...
