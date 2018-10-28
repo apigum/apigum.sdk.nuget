@@ -2,9 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <Version>1.0.3</Version>
+    <Version>1.0.6</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <PackageProjectUrl>https://github.com/apigum/apigum.sdk.nuget/</PackageProjectUrl>
+    <PackageIconUrl>https://www.apigum.com/img/logo.png</PackageIconUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/apigum/apigum.sdk.nuget/</RepositoryUrl>
+    <PackageTags>Integration, Synchronization, SendGrid, Freshdesk, Stripe, Capsule Crm, Zoho Invoice, 2Checkout, Pipedrive, toggl, Authorize.Net, ActiveTrail, PayPal, GreenInvoice, Shopify, Less Annoying CRM</PackageTags>
+    <Description>ApiGum SDK is a .Net library for managing integrations between popular cloud applications like Twilio, SendGrid, Shopify and others.</Description>
   </PropertyGroup>
 
   <ItemGroup>
