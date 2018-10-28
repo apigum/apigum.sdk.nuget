@@ -22,6 +22,8 @@ namespace Apigum.Sdk.Generator
 
         static void WriteFile() {
 
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls;
+
             var sb = new StringBuilder();
             sb.AppendLine("namespace Apigum.Sdk.Generation {");
             sb.AppendLine("public class Apps {");
@@ -30,7 +32,6 @@ namespace Apigum.Sdk.Generator
 
             using (var httpClient = new HttpClient())
             {
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls;
 
                 //var httpContent = new StringContent(request, Encoding.UTF8, "application/json");
                 var httpResponse = httpClient.GetAsync("https://api.apigum.com/v1/apps/published");
@@ -56,9 +57,6 @@ namespace Apigum.Sdk.Generator
 
                 using (var httpClient = new HttpClient())
                 {
-                    ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Tls;
-
-                    //var httpContent = new StringContent(request, Encoding.UTF8, "application/json");
                     var httpResponse = httpClient.GetAsync($"https://api.apigum.com/v1/apps/{app["SafeName"].ToString()}/integrations");
 
                     var statusCode = httpResponse.Result.StatusCode;
@@ -69,16 +67,43 @@ namespace Apigum.Sdk.Generator
                 }
 
 
+                
+
+
 
                 foreach (var integration in integrations)
                 {
-                    sb.AppendLine("public static string {integration-title} = \"{integration-key}\";"
+                    sb.AppendLine("public const string {integration-title} = \"{integration-key}\";"
                         .Replace("{integration-title}", FormatItem(integration["Description"].ToString(), true))
                         .Replace("{integration-key}", integration["IntegrationId"].ToString()));
                 }
 
                 sb.AppendLine("}");
-                sb.AppendLine("public static string AppId = \"{app-key}\";".Replace("{app-key}", app["Id"].ToString()));
+
+
+                sb.AppendLine("public static class Keys {");
+                JArray Keys;
+
+                using (var httpClient = new HttpClient())
+                {
+
+                    var httpResponse = httpClient.GetAsync($"https://api.apigum.com/v1/apps/{app["Id"].ToString()}");
+
+                    var statusCode = httpResponse.Result.StatusCode;
+                    var response = httpResponse.Result.Content.ReadAsStringAsync().Result;
+
+                    Keys = JArray.Parse(JObject.Parse(response).SelectToken("AppKeys").ToString());
+
+                }
+
+                foreach (var key in Keys)
+                {
+                   sb.AppendLine($"public const string { System.Globalization.CultureInfo.InvariantCulture.TextInfo.ToTitleCase(FormatItem(key["Name"].ToString()))} = \"{key["Name"].ToString()}\";");
+                }
+
+                sb.AppendLine("}");
+
+                sb.AppendLine("public const string AppId = \"{app-key}\";".Replace("{app-key}", app["Id"].ToString()));
                 sb.AppendLine("}");
             }
 

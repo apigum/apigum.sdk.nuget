@@ -23,11 +23,11 @@ namespace Apigum.Sdk.Tests
             StripeCrentials = new Dictionary<string, string>();
 
             //set up credentials
-            FreshdeskCrentials.Add("apikey", "your freshdesk api key");
-            FreshdeskCrentials.Add("subdomain", "your freshdesk subdomain");
+            FreshdeskCrentials.Add(Apps.Freshdesk.Keys.apikey, "your freshdesk api key");
+            FreshdeskCrentials.Add(Apps.Freshdesk.Keys.Subdomain, "your freshdesk subdomain");
 
             //set up credentials
-            StripeCrentials.Add("secretkey", "your stripe secret key");
+            StripeCrentials.Add(Apps.Stripe.Keys.secretkey, "your stripe secret key");
                         
 
             //obtain api key at https://account.apigum.com/api
@@ -60,25 +60,21 @@ namespace Apigum.Sdk.Tests
         [TestMethod]
         public void DeleteIntegration()
         {
-            var script = System.IO.File.ReadAllText("integration.js");
-            var integrationId = new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75");
-            Integration.Delete(integrationId);
+            Integration.Delete(new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75"));
         }
 
 
         [TestMethod]
         public void Start()
         {
-            var integrationId = new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75");
-            Integration.Publish(integrationId);
+            Integration.Publish(new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75"));
         }
 
 
         [TestMethod]
         public void Stop()
         {
-            var integrationId = new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75");
-            Integration.Unpublish(integrationId);
+            Integration.Unpublish(new Guid("C0C052A5-5F5B-41F7-9390-D091F66D9B75"));
         }
 
     }
