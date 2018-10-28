@@ -1,9 +1,8 @@
 # ApiGum.Sdk
 
-[![NuGet](https://img.shields.io/nuget/v/apigum.svg)](https://www.nuget.org/packages/apigum/)
+[![NuGet](https://img.shields.io/nuget/v/Apigum.Sdk.svg)](https://www.nuget.org/packages/Apigum.Sdk/)
 
 ApiGum SDK is a .Net library for managing integrations between popular cloud applications like Twilio, SendGrid, Shopify and others.
-
 ## Installation
 
  - ApiGum SDK is available as a [NuGet Package](https://www.nuget.org/packages/apigum.sdk/).
