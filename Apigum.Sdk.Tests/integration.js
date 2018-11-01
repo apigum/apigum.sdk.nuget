@@ -1,4 +1,4 @@
-﻿yyyyyyyyyyyyyyyy var obj={};
+﻿var obj={};
 
 function setElements(event) {
     obj.OrganizationName = "REPLACE EVENT TOKEN";

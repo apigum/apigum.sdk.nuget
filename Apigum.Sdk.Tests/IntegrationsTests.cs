@@ -23,11 +23,11 @@ namespace Apigum.Sdk.Tests
             StripeCrentials = new Dictionary<string, string>();
 
             //set up credentials
-            FreshdeskCrentials.Add(Apps.Freshdesk.Keys.apikey, "your freshdesk api key");
+            FreshdeskCrentials.Add(Apps.Freshdesk.Keys.Apikey, "your freshdesk api key");
             FreshdeskCrentials.Add(Apps.Freshdesk.Keys.Subdomain, "your freshdesk subdomain");
 
             //set up credentials
-            StripeCrentials.Add(Apps.Stripe.Keys.secretkey, "your stripe secret key");
+            StripeCrentials.Add(Apps.Stripe.Keys.Secretkey, "your stripe secret key");
                         
 
             //obtain api key at https://account.apigum.com/api
@@ -42,7 +42,7 @@ namespace Apigum.Sdk.Tests
             var stripe = AppHelper.Configure(Apps.Stripe.AppId, StripeCrentials);
             
             var integrationId = Integration.Create(freshdesk, stripe, 
-                Apps.Freshdesk.Integrations.CREATE_FRESHDESK_CONTACT_FOR_NEW_STRIPE_CUSTOMERS);
+                Apps.Freshdesk.Integrations.CREATE_FRESHDESK_COMPANY_FOR_NEW_BILLIVING_CLIENTS);
             
             //save integration id for later use
         }

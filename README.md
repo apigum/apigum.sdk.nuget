@@ -17,7 +17,7 @@ ApiGum SDK is a .Net library for managing integrations between popular cloud app
  - This library makes calls to the [apigum REST API](https://api.apigum.com/help).
  - This SDK includes a current snapshot of [supported integrations](https://github.com/apigum/apigum.sdk.nuget/blob/master/ApiGum.Sdk.Generator/Apps.cs). This of course can be overriden by picking up new integration ids @ apigum.com.
 
-## Namespaces
+### Namespaces
 All examples here are written as if you've added the following using statements to your file...
 
 ```cs
